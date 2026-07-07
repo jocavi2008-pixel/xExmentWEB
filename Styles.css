@@ -1,0 +1,158 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body::before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    background-image: url(Imagenes/xExment.jpg);
+    position: fixed;
+    filter: blur(2px);
+    z-index: -1;
+    transform: scale(1.5);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ParteSuperior{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+}
+
+.perfil {
+    
+    background-color: #e2dedec6;
+    box-shadow: 4px 4px 6px #000000c6;
+    font-size: 12px;
+    border: 3px solid #e4e5e5c6;
+    color: #007bff;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 310px;
+}
+    .perfil img{
+    
+    margin: 20px;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.perfil img:hover{
+    transform: scale(1.2);
+}
+
+.TextoIzquierdo{
+    font-size: 20px;
+    Padding: 20px;
+    margin: 0 auto;
+    margin-left: 40px;
+}
+
+.TextoIzquierdo:hover{
+    color: yellowgreen;
+}
+
+.TextoDerecho{
+    font-size: 20px;
+    Padding: 20px;
+    margin: 0 auto;
+    margin-right: 40px;
+}
+
+.TextoDerecho:hover{
+    color: yellowgreen;
+}
+
+.Tarjeta{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 40px;
+}
+
+.Tarjeta:hover .TarjetaCurriculum,
+.Tarjeta:hover .TarjetaPagina,
+.Tarjeta:hover .TarjetaRedes,
+.Tarjeta:hover .TarjetaSobreMi {
+    filter: blur(3px);
+    opacity: 0.7;
+}
+
+.Tarjeta a:link,
+.Tarjeta a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.TarjetaCurriculum {
+    background-image: url(Imagenes/CVPortada.png);
+    border: 4px solid #007bff;
+    box-shadow: 4px 4px 3px black;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.4s, box-shadow 0.4s, filter 0.8s;
+}
+
+.TarjetaPagina{
+    background-image: url(FotoDePerfil.jpeg);
+    border: 4px solid #007bff;
+    box-shadow: 4px 4px 3px black;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.4s, box-shadow 0.4s, filter 0.8s;
+}
+
+.TarjetaRedes{
+    background-image: url(FotoDePerfil.jpeg);
+    border: 4px solid #007bff;
+    box-shadow: 4px 4px 3px black;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.4s, box-shadow 0.4s, filter 0.8s;
+}
+
+.TarjetaSobreMi{
+    background-image: url(FotoDePerfil.jpeg);
+    border: 4px solid #007bff;
+    box-shadow: 4px 4px 3px black;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.4s, box-shadow 0.4s, filter 0.8s;
+}
+.TarjetaCurriculum:hover, 
+.TarjetaPagina:hover, 
+.TarjetaRedes:hover, 
+.TarjetaSobreMi:hover {
+    transform: scale(1.2);
+    box-shadow: none;
+    filter: blur(0px) !important;
+    opacity: 1 !important;
+}
+
+.footer {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer:hover {
+    color: yellowgreen;
+}
