@@ -117,15 +117,62 @@ body::before{
 }
 
 .TarjetaRedes{
-    background-image: url(FotoDePerfil.jpeg);
+    background-image: url(Imagenes/RedesSociales.png);
     border: 4px solid #007bff;
     box-shadow: 4px 4px 3px black;
     border-radius: 5px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    h2{
+        margin-bottom: 2px;
+    }
     transition: transform 0.4s, box-shadow 0.4s, filter 0.8s;
 }
+
+.BotonesRedes{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    img{
+        height: 30px;
+    }
+    p{
+        margin: 0;
+    }
+}
+
+.BotonesRedes a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.Youtube{
+    border: 3px solid #ff0f0f;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    background-image: url(Imagenes/youtube.png);           
+}
+.X {
+    border: 3px solid #5db1ff;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    background-image: url(Imagenes/youtube.png);
+    p{
+        color: aliceblue;
+    }  
+}
+.Instagram{
+    border: 3px solid rgb(250, 72, 161);
+    border-radius: 8px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);        
+}
+.TikTok{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    background: linear-gradient(45deg, #f63c3c, #f94e4e, rgb(255, 255, 255), #5ce0fb, rgb(0, 255, 251));        
+}
+
 
 .TarjetaSobreMi{
     background-image: url(FotoDePerfil.jpeg);
