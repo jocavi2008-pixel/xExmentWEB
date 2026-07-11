@@ -106,7 +106,8 @@ body::before{
 }
 
 .TarjetaPagina{
-    background-image: url(FotoDePerfil.jpeg);
+    background-color: white;
+    /*background-image: url(FotoDePerfil.jpeg);*/
     border: 4px solid #007bff;
     box-shadow: 4px 4px 3px black;
     border-radius: 5px;
@@ -175,7 +176,7 @@ body::before{
 
 
 .TarjetaSobreMi{
-    background-image: url(FotoDePerfil.jpeg);
+    background-image: url(Imagenes/FotoNotas.png);
     border: 4px solid #007bff;
     box-shadow: 4px 4px 3px black;
     border-radius: 5px;
